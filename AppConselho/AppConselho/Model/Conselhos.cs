@@ -4,7 +4,17 @@ using System.Text;
 
 namespace AppConselho.Model
 {
-    internal class Conselhos
+    class Conselhos
     {
+        public string Title { get; set; }
+        public string Id { get; set; }
+        public string Conselho { get; set; }
+
+        public Conselhos()
+        {
+            this.Title = " ";
+            this.Id = " ";
+            this.Conselho = " ";
+        }
     }
 }

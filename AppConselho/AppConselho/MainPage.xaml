@@ -14,13 +14,14 @@
                FontAttributes="Bold" FontSize="Title" HorizontalOptions="Center" 
                Margin="1,30"/>
 
-        <Button Text="Me clicka" Clicked="Button_Clicked"  
+        <Button Text="Me clicka" Clicked="BtnConselho_Clicked"  
+                x:Name="BtnConselho"
                 BackgroundColor="Beige" Padding="10"
                 Margin="1,30" Scale="2"
                 HorizontalOptions="Center"/>
 
-        <Label  Text="{Binding Msg}"
-                x:Name="Msg" TextColor="Black">
+        <Label  Text="{Binding Conselho}"
+                x:Name="Conselho" TextColor="Black">
             
         </Label>
                
