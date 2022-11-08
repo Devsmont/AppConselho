@@ -4,26 +4,55 @@
              x:Class="AppConselho.MainPage"
              BackgroundColor="AliceBlue">
 
+    <ContentPage.Content>
+
     <StackLayout
         Margin="20"
         BackgroundColor="Wheat">
         
         
 
-        <Label Text="Receba a mensagem" TextColor="Black" 
-               FontAttributes="Bold" FontSize="Title" HorizontalOptions="Center" 
-               Margin="1,30"/>
+        <Label Text="Receba a mensagem" 
+                 TextColor="Black" 
+                 FontAttributes="Bold"
+                 FontSize="Title" 
+                 HorizontalOptions="Center" 
+                 VerticalOptions="Start"
+                 Margin="1,30"/>
 
-        <Button Text="Me clicka" Clicked="BtnConselho_Clicked"  
-                x:Name="BtnConselho"
-                BackgroundColor="Beige" Padding="10"
-                Margin="1,30" Scale="2"
-                HorizontalOptions="Center"/>
+        <Label Text="{Binding Slip_ID}"
+                   VerticalOptions="Start"
+                   FontSize="Title" 
+                   FontAttributes="Bold"
+                   TextColor="Black"
+        />
 
-        <Label  Text="{Binding Conselho}"
-                x:Name="Conselho" TextColor="Black">
+        <Label Text="{Binding Conselho}" 
+                   
+                   HorizontalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"
+                   FontSize="Body" 
+                   FontAttributes="Bold"
+                   TextColor="Black"/>
+
+        <Entry Placeholder="" 
+                   HorizontalTextAlignment="Center"
+                   Margin="100,50,100,0"
+                   PlaceholderColor="DarkGray"
+                   x:Name="ent_Num"
+                   Keyboard="Numeric"
+                   TextColor="DarkGoldenrod"/>
+        
+
+        <ImageButton Image="Me clicka" Clicked="BtnConselho_Clicked"  
+                  x:Name="BtnConselho"
+                  BackgroundColor="Beige" Padding="10"
+                  Margin="1,30" Scale="2"
+                  HorizontalOptions="Center"/>
+
+       
             
-        </Label>
+  
                
                 
         
@@ -32,5 +61,6 @@
 
 
     </StackLayout>
+    </ContentPage.Content>
 
 </ContentPage>

@@ -4,16 +4,16 @@ using System.Text;
 
 namespace AppConselho.Model
 {
-    class Conselhos
+    public class Conselhos
     {
-        public string Title { get; set; }
-        public string Id { get; set; }
+        
+        public string Slip_Id { get; set; }
         public string Conselho { get; set; }
 
         public Conselhos()
         {
-            this.Title = " ";
-            this.Id = " ";
+           
+            this.Slip_Id = " ";
             this.Conselho = " ";
         }
     }
